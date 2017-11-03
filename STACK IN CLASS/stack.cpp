@@ -29,8 +29,8 @@ int Stack::pop()
 void Stack::output()
 {
 	node *pointer = top;
-	printf_s("«Ì‡˜ÂÌËÂ ‚Â¯ËÌ˚ ÒÚ˝Í‡ %i\n", pointer->data);
-	printf_s("«Ì‡˜ÂÌËˇ ˝ÎÂÏÂÌÚÓ‚ ÒÚ˝Í‡: ");
+	printf_s("–ó–Ω–∞—á–µ–Ω–∏–µ –≤–µ—Ä—à–∏–Ω—ã —Å—Ç—ç–∫–∞ %i\n", pointer->data);
+	printf_s("–ó–Ω–∞—á–µ–Ω–∏—è —ç–ª–µ–º–µ–Ω—Ç–æ–≤ —Å—Ç—ç–∫–∞: ");
 	for (int j = 0; j < size; j++)
 	{
 		printf_s("%i ", pointer->data);
@@ -65,3 +65,4 @@ int Stack::prev() {
 bool Stack::hasPrev() {
 	return it->prev == nullptr ? false : true;
 }
+
