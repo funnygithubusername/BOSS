@@ -1,6 +1,3 @@
-// ConsoleApplication5.cpp: определяет точку входа для консольного приложения.
-//
-
 #include "stdafx.h"
 #include "clocale"
 #include "iostream"
@@ -28,23 +25,23 @@ int _tmain(int argc, _TCHAR* argv[])
 	int i;
 	stack stk;
 	initialise(&stk);
-	printf_s("Введите количество элементов стэка\n");
+	printf_s("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ СЃС‚СЌРєР°\n");
 	scanf_s("%i", &n);
 
-	printf_s("Введите данные в стэк\n");
+	printf_s("Р’РІРµРґРёС‚Рµ РґР°РЅРЅС‹Рµ РІ СЃС‚СЌРє\n");
 	for (int j = 0; j < n; j++)
 	{
 		scanf_s("%i", &i);
 		push(&stk, i);
 	}
 
-	printf_s("Вывод содержимого стэка:\n");
+	printf_s("Р’С‹РІРѕРґ СЃРѕРґРµСЂР¶РёРјРѕРіРѕ СЃС‚СЌРєР°:\n");
 	output(&stk, n);
 
-	printf_s("\nУдаляем все элементы стэка...\n");
+	printf_s("\nРЈРґР°Р»СЏРµРј РІСЃРµ СЌР»РµРјРµРЅС‚С‹ СЃС‚СЌРєР°...\n");
 	for (int j = 0; j < n; j++)
 		pop(&stk);
-	printf_s("Стэк пуст\n");
+	printf_s("РЎС‚СЌРє РїСѓСЃС‚\n");
 	system("pause");
 	return 0;
 }
@@ -77,8 +74,8 @@ int pop(stack *s)
 void output(stack *s, int n)
 {
 	node *pointer = s->top;
-	printf_s("Значение вершины стэка %i\n", pointer->data);
-	printf_s("Значения элементов стэка: ");
+	printf_s("Р—РЅР°С‡РµРЅРёРµ РІРµСЂС€РёРЅС‹ СЃС‚СЌРєР° %i\n", pointer->data);
+	printf_s("Р—РЅР°С‡РµРЅРёСЏ СЌР»РµРјРµРЅС‚РѕРІ СЃС‚СЌРєР°: ");
 	for (int j = 0; j < n; j++)
 	{
 		printf_s("%i ", pointer->data);
