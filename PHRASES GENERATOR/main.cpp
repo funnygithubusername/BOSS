@@ -12,7 +12,7 @@ int main()
 	FABRIC fb;
 
 	int numb;
-	printf_s("Ââåäèòå êîëè÷åñâî ñëîãàíîâ\n");
+	printf_s("Введите количесво слоганов\n");
 	scanf_s("%i", &numb);
 	for (int i = 0; i < numb; i++)
 	{
